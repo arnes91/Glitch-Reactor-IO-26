@@ -44,7 +44,7 @@ export default function App() {
       setIntroStatus('Playing AI Intro...');
       
       if (!audioCtxRef.current) {
-        audioCtxRef.current = new AudioContext({ sampleRate: 24000 });
+        audioCtxRef.current = new AudioContext();
       }
       const ctx = audioCtxRef.current;
       
@@ -89,7 +89,7 @@ export default function App() {
       audio.volume = 0.5;
       
       if (!audioCtxRef.current) {
-        audioCtxRef.current = new AudioContext({ sampleRate: 24000 });
+        audioCtxRef.current = new AudioContext();
       }
       const ctx = audioCtxRef.current;
       
